@@ -5,3 +5,88 @@
   box-sizing: border-box;
 }
 /* End General Styles */
+
+/* Start Header Section */
+.header .container {
+  border: 3px solid yellow;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #c20d00;
+  background-blend-mode: multiply;
+}
+
+.header__image {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.header__text {
+  padding: 40px 0;
+
+  text-align: center;
+}
+
+.header__title {
+  margin: 25px 0 10px 0;
+  padding: 0 30px;
+  color: #fff;
+}
+
+.header__description {
+  padding: 0 20px;
+  color: #eee;
+  font-size: 14px;
+}
+
+.header__buttons {
+  margin-top: 40px;
+}
+
+.header__buttons button {
+  display: inline-flex;
+  align-items: center;
+  margin: 5px;
+  border: 0;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+.header__buttons button i {
+  display: block;
+  color: #c20d00;
+}
+
+.header__buttons button span {
+  margin-bottom: 2px;
+  margin-right: 5px;
+  display: block;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__content {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .header__image {
+    width: 50%;
+    height: auto;
+    height: 100vh;
+  }
+  .header__text {
+    order: 2;
+    width: 50%;
+  }
+}
+
+/* End Header Section */
