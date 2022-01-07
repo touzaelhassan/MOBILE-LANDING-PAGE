@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: cairo, 'sans-serif';
 }
 /* End General Styles */
 
@@ -278,3 +279,54 @@
   }
 }
 /* End Slider Section */
+
+/* Start Questions Section */
+.questions {
+  padding: 50px 0;
+  background-image: url(../images/bg-2.jpg);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+}
+
+.questions__title {
+  margin-bottom: 35px;
+  text-align: center;
+  color: #fff;
+}
+
+.questions__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd !important;
+}
+
+.accordion-body {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Start Media Queries */
+@media screen and (min-width: 992px) {
+  .questions {
+    padding: 70px;
+  }
+
+  .questions__title {
+    margin-bottom: 50px;
+  }
+
+  .questions__content {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .questions__item {
+    width: calc(33% - 20px);
+  }
+}
+/* End Questions Section */
